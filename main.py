@@ -40,6 +40,6 @@ async def main():
                 await tweet.get_by_role('button', name='더 보기').click()
                 await page.get_by_role('menuitem', name='삭제하기', exact=True).click()
                 await page.get_by_role('button', name='삭제하기', exact=True).click()
-            await page.wait_for_timeout(1000)
+            await page.wait_for_timeout(500)
 
 asyncio.run(main())
